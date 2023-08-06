@@ -2,8 +2,9 @@ import ChangeThemeButton from "../components/ChangeThemeButton"
 import { backgroundColor } from "../recoil"
 import styles from "./dashboard.module.scss"
 import { useRecoilState } from "recoil"
+import { FC } from "react"
 
-const Dashboard = () => {
+const Dashboard: FC = (): React.ReactElement => {
     const [theme] = useRecoilState(backgroundColor)
     return (
         <div className={styles['dashboard-container']}>

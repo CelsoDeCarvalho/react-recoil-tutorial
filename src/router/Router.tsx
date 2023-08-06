@@ -1,7 +1,8 @@
 import { Routes, HashRouter, Route, Navigate } from "react-router-dom"
 import Dashboard from "../pages/Dashboard"
+import { FC } from "react"
 
-const Router = () => {
+const Router: FC = (): React.ReactElement => {
     return (
         <HashRouter>
             <Routes>

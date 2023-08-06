@@ -1,8 +1,9 @@
 import { backgroundColor } from "../recoil"
 import styles from "./Button.module.scss"
 import { useRecoilState } from "recoil"
+import { FC } from "react"
 
-const ChangeThemeButton = () => {
+const ChangeThemeButton: FC = (): React.ReactElement => {
     const [theme, setTheme] = useRecoilState(backgroundColor)
 
     const getNextTheme = () => theme === "light" ? "dark" : "light"
