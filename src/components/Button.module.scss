@@ -1,0 +1,13 @@
+.button-container{
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(50, 236, 236);
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1em;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgb(41, 219, 219) !important;
+    }
+}

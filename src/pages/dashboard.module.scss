@@ -4,4 +4,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .light{
+        @extend .dashboard-container;
+        background-color: white;
+        transition: background-color ease .5s;
+    }
+
+    .dark{
+        @extend .dashboard-container;
+        background-color: rgb(44, 44, 44);
+        transition: background-color ease .5s;
+    }
 }
+

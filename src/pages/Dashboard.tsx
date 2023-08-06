@@ -1,10 +1,15 @@
 import ChangeThemeButton from "../components/ChangeThemeButton"
-import style from "./dashboard.module.scss"
+import { backgroundColor } from "../recoil"
+import styles from "./dashboard.module.scss"
+import { useRecoilState } from "recoil"
 
 const Dashboard = () => {
+    const [theme] = useRecoilState(backgroundColor)
     return (
-        <div className={style['dashboard-container']}>
-            <ChangeThemeButton />
+        <div className={styles['dashboard-container']}>
+            <div className={styles[theme]}>
+                <ChangeThemeButton />
+            </div>
         </div>
     )
 }
