@@ -44,6 +44,6 @@
   },
   "devDependencies": {
     "node-sass": "^9.0.0",
-    "typed-scss-modules": "^7.1.2"
+    "typed-scss-modules": "^8.0.0"
   }
 }
